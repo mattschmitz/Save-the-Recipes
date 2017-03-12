@@ -4,7 +4,7 @@ import RecipeEntry from './RecipeEntry.jsx'
 class CookBook extends React.Component {
   render() {
     var count = 0;
-    var rows = this.props.recipes.map((recipe) => 
+    var rows = this.props.recipes.reverse().map((recipe) => 
       <RecipeEntry key={count++} recipe={recipe}/>
     );
     return (

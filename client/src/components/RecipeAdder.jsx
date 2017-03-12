@@ -22,8 +22,11 @@ class RecipeAdder extends React.Component {
       method: 'POST',
       data: {url: this.state.value}
     })
-    .done((recipes) => {
-      // console.log('recipeAdder.js post succes');
+    .done((recipe) => {
+      // console.log('recipeAdder.js post succes:', recipe);
+      this.props.refreshRecipes();
+      this.setState({value: ''});
+
     })
     .fail(function(data){
       console.log('recipeAdder.js post falure');

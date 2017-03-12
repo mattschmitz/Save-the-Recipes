@@ -32,12 +32,11 @@ class App extends React.Component {
     })
   }
 
-
   render() {
     return (
       <div>
         <h1>Save the Recipes!</h1>
-        <RecipeAdder />
+        <RecipeAdder refreshRecipes={this.getRecipes.bind(this)}/>
         <CookBook recipes={this.state.recipes}/>
       </div>
     )
