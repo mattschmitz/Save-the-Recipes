@@ -1,0 +1,15 @@
+.recipe-entry {
+  margin-top: 5px;
+  border: 1px solid #6565ad;
+  padding: 10px;
+  background-color: #f1fcff;
+  border-radius: 5px;
+}
+
+.recipe-entry .recipe-title{
+  font-size: 18px;
+}
+
+.recipe-entry .recipe-url {
+  font-size: 12px;
+}
