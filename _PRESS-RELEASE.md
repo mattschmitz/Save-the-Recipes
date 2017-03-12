@@ -18,27 +18,36 @@ Once the project moves into development, the press release can be used as a touc
  
 ## Heading ##
   > Name the product in a way the reader (i.e. your target customers) will understand.
+  Save The Recipes
 
 ## Sub-Heading ##
   > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+  Save online recipes from anywhere, with your own notes and edits
 
 ## Summary ##
   > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  With Save The Recipes you can collect recipes from anywhere on the web and have them display in the same format, where you can edit and customize them as you try them out. Add notes and images, organize by category, and share with friends. 
 
 ## Problem ##
   > Describe the problem your product solves.
+  There are many different recipe sites that allow you to save recipes, but they each limit you to your own database of recipes. With this app you can grab a recipe from anywhere, and edit it as you please.
 
 ## Solution ##
   > Describe how your product elegantly solves the problem.
+  This app simplifies the user interface by grabbing content from any recipe website and saving it in a uniform format.
 
 ## Quote from You ##
   > A quote from a spokesperson in your company.
+  Your favorite recipes, custimzed for you, all in one place.
 
 ## How to Get Started ##
   > Describe how easy it is to get started.
+  Simple create an account and start pasting URL's to your favorite recipes. 
 
 ## Customer Quote ##
   > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  "I used to be a member of several online recipe sites, but now I only need to go to one place for all my favorite recipes"
 
 ## Closing and Call to Action ##
   > Wrap it up and give pointers where the reader should go next.
+  "Try it out for yoursel - next we're going to add the ability to scan recipes from old cookbooks and add them"
