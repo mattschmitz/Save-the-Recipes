@@ -16,7 +16,8 @@ exports.fetchRecipes = function(req, res) {
 };
 
 exports.addRecipe = function(req, res) {
-  var url = req.body.url;
+  let url = req.body.url;
+  let title = req.body.title;
 
   //TODO: check if valid url
 
@@ -24,7 +25,7 @@ exports.addRecipe = function(req, res) {
 
   var newRecipe = new Recipe({
     url: url,
-    title: 'New Recipe!'
+    title: title
   });
   newRecipe.save(function(err, newRecipe){
     if (err) {
