@@ -23,9 +23,6 @@ class RecipeAdder extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    // let form = $(event.target);
-    // let url = form.find('input[name=url]').val();
-    // let title = form.find('input[name=title]').val()
 
     $.ajax({
       url: '/recipes',
@@ -39,8 +36,11 @@ class RecipeAdder extends React.Component {
     .done((recipe) => {
       // console.log('recipeAdder.js post succes:', recipe);
       this.props.refreshRecipes();
-      this.setState({url: ''});
-      this.setState({title: ''});
+      this.setState({
+        url: '',
+        title: '',
+        notes: ''
+      });
     })
     .fail(function(data){
       console.log('recipeAdder.js post falure');

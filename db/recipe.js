@@ -4,6 +4,7 @@ var mongoose = require('mongoose');
 var recipeSchema = mongoose.Schema({
   title: String, 
   url: String,
+  notes: String,
   imageUrl: String,
 });
 

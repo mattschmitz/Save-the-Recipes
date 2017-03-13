@@ -7,11 +7,26 @@
 }
 
 .recipe-entry .recipe-title{
-  font-size: 18px;
+  font-size: 22px;
+  font-family: cursive;
 }
 
 .recipe-entry .recipe-url {
   font-size: 12px;
+  color: blue;
+}
+
+.recipe-notes-title {
+  margin: 5px 10px 2px;
+  font-size: 16px;
+  color: #464646;
+  font-weight: 700;
+}
+
+.recipe-notes-body {
+  margin: 0px 0px 0px 10px;
+  font-size: 14px;
+  color: #464646;
 }
 
 fieldset {
@@ -33,4 +48,9 @@ input {
 textarea {
   padding: 4px;
   margin: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }

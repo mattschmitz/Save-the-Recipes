@@ -12,6 +12,14 @@ class RecipeEntry extends React.Component {
           <div className="recipe-url">
             {this.props.recipe.url}
           </div>
+          <div className="recipe-notes">
+            <div className="recipe-notes-title">
+              Notes:
+            </div>
+            <div className="recipe-notes-body"> 
+              {this.props.recipe.notes}
+            </div>
+          </div>
         </a>
       </div>
     );

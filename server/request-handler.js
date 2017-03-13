@@ -18,14 +18,15 @@ exports.fetchRecipes = function(req, res) {
 exports.addRecipe = function(req, res) {
   let url = req.body.url;
   let title = req.body.title;
-
+  let notes = req.body.notes;
   //TODO: check if valid url
 
   //TODO: get url title
 
   var newRecipe = new Recipe({
     url: url,
-    title: title
+    title: title, 
+    notes: notes
   });
   newRecipe.save(function(err, newRecipe){
     if (err) {
