@@ -13,3 +13,24 @@
 .recipe-entry .recipe-url {
   font-size: 12px;
 }
+
+fieldset {
+  padding: 0 5px 5px 5px;
+}
+
+label {
+  float: left;
+  clear: left;
+  width: 50px;
+  margin: 5px;
+}
+
+input {
+  padding: 4px;
+  margin: 5px;
+}
+
+textarea {
+  padding: 4px;
+  margin: 5px;
+}

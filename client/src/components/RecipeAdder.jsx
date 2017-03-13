@@ -7,7 +7,8 @@ class RecipeAdder extends React.Component {
     super(props);
     this.state = {
       title: '',
-      url: ''
+      url: '',
+      notes: ''
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -29,7 +30,11 @@ class RecipeAdder extends React.Component {
     $.ajax({
       url: '/recipes',
       method: 'POST',
-      data: {url: this.state.url, title: this.state.title}
+      data: {
+        url: this.state.url, 
+        title: this.state.title,
+        notes: this.state.notes
+      }
     })
     .done((recipe) => {
       // console.log('recipeAdder.js post succes:', recipe);
@@ -46,22 +51,38 @@ class RecipeAdder extends React.Component {
     return(
       <div>
         <form onSubmit={this.handleSubmit}>
-          <input 
-            type="text"
-            value={this.state.title}
-            name="title"
-            onChange={this.handleChange}
-            placeholder="Enter a recipe Title!"
-          />
-          <br></br>
-          <input
-            type="text"
-            value={this.state.url}
-            name="url"
-            onChange={this.handleChange}
-            placeholder="Paste a recipe URL"
-          />
-          <input type="submit" value="Add Recipe"/>
+          <fieldset>
+            <legend> New Recipe </legend>
+            <label>Title: </label> 
+            <input 
+              type="text"
+              value={this.state.title}
+              name="title"
+              onChange={this.handleChange}
+              placeholder="Enter a recipe name"
+            />
+            <br></br>
+            <label>Url: </label> 
+            <input
+              type="text"
+              value={this.state.url}
+              name="url"
+              onChange={this.handleChange}
+              placeholder="Paste it's url"
+            />
+            <br></br>
+            <label>Notes: </label> 
+            <textarea
+              rows="6"
+              cols="60"
+              type="text"
+              value={this.state.notes}
+              name="notes"
+              onChange={this.handleChange}
+              placeholder="...and add some notes!"
+            />
+            <input type="submit" value="Add Recipe"/>
+          </fieldset>
         </form>
       </div>
     );
