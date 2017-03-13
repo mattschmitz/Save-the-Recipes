@@ -5,12 +5,14 @@ class RecipeEntry extends React.Component {
     var url = 'http://allrecipes.com/recipe/241813/slow-cooker-belgian-chicken-booyah/?internalSource=staff%20pick&referringId=201&referringContentType=recipe%20hub&clickId=cardslot%204';
     return(
       <div className="recipe-entry">
-        <div className="recipe-title">
-          {this.props.recipe.title}
-        </div>
-        <div className="recipe-url">
-          {this.props.recipe.url}
-        </div>
+        <a href={this.props.recipe.url}>
+          <div className="recipe-title">
+            {this.props.recipe.title}
+          </div>
+          <div className="recipe-url">
+            {this.props.recipe.url}
+          </div>
+        </a>
       </div>
     );
   }
