@@ -1,2 +1,2 @@
 # Save The Recipes
-Recipe URL saving MVP
+Save recipes from any source, add notes
